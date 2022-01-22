@@ -2,7 +2,7 @@ let timeLeft = 15;
 const downloadTimer = setInterval(function () {
     let serverActive = document.getElementById("server-active-panel")
     if (serverActive.innerText.includes("server accessible")) {
-        document.getElementById("server-info").innerText = "server will load in " + timeLeft + " seconds";
+        document.getElementById("server-info").innerText = "Configured webpage will load in " + timeLeft + " seconds...";
         if (timeLeft <= 0) {
             clearInterval(downloadTimer);
             fetch("/stop_stream", {

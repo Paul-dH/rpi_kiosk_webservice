@@ -8,38 +8,34 @@
     <title>Rpi Kiosk Webservice</title>
 </head>
 <body>
-<div id="info-panel"
-     style="position: fixed;left: 50%;top: 5%;transform: translate(-50%, -50%);margin: 0 auto;font-size: 2vw">
-    version {{.Version}}
-</div>
 <div style="position: fixed;left: 50%;top: 15%;transform: translate(-50%, -50%);margin: 0 auto">
     <input id="password" class="use-keyboard-input" placeholder="PASSWORD"
            style="flex: 1;text-align: center;border: 2px solid white;width: 100%;font-size: 2.5vw" autocomplete="off">
 </div>
 <div style="position: fixed;left: 50%;top: 40%;transform: translate(-50%, -50%);margin: 0 0;font-size: 3vw;width: 100%">
     <div style="display: flex;margin-top: 5px">
-        <div style="flex: 1;text-align: right;margin-right: 10px">IP ADDRESS:</div>
+        <div style="flex: 1;text-align: right;margin-right: 10px">Ip Address:</div>
         <div style="flex: 1;text-align: left;display: flex; align-items: center">
             <input id="ipaddress" class="use-keyboard-input" style="border: 1px solid white;font-size: 2.2vw" disabled
                    value="{{.IpAddress}}">
         </div>
     </div>
     <div style="display: flex;margin-top: 5px">
-        <div style="flex: 1;text-align: right;margin-right: 10px">MASK:</div>
+        <div style="flex: 1;text-align: right;margin-right: 10px">Netmask:</div>
         <div style="flex: 1;text-align: left;display: flex; align-items: center">
             <input id="mask" class="use-keyboard-input" style="border: 1px solid white;font-size: 2.2vw" disabled
                    value="{{.Mask}}">
         </div>
     </div>
     <div style="display: flex;margin-top: 5px">
-        <div style="flex: 1;text-align: right;margin-right: 10px">GATEWAY:</div>
+        <div style="flex: 1;text-align: right;margin-right: 10px">Gateway:</div>
         <div style="flex: 1;text-align: left;display: flex; align-items: center">
             <input id="gateway" class="use-keyboard-input" style="border: 1px solid white;font-size: 2.2vw" disabled
                    value="{{.Gateway}}">
         </div>
     </div>
     <div style="display: flex;margin-top: 5px">
-        <div style="flex: 1;text-align: right;margin-right: 10px;">SERVER ADDRESS:</div>
+        <div style="flex: 1;text-align: right;margin-right: 10px;">Configured webpage:</div>
         <div style="flex: 1;text-align: left;display: flex; align-items: center">
             <input id="server" class="use-keyboard-input" style="border: 1px solid white;font-size: 2.2vw" disabled
                    value="{{.ServerIpAddress}}">
@@ -70,10 +66,6 @@
             style="width: 180px;flex:1;margin:10px;height: 6vw;font-size: 2vw;border: 2px solid white;pointer-events: none"
             disabled>SAVE
     </button>
-</div>
-<div id="version-panel"
-     style="position: fixed;left: 50%;bottom: 5%;transform: translate(-50%, -50%);margin: 0 auto;font-size: 2vw">
-    &copy; 2021 Petr Jahoda
 </div>
 </body>
 </html>
